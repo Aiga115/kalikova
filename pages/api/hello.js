@@ -1,5 +1,27 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-export default (req, res) => {
-  res.status(200).json({ name: 'John Doe' })
+// export default (req, res) => {
+//   res.status(200).json({ name: 'John Doe' })
+//
+// }
+
+import axios from 'axios';
+
+export const url = ''
+const baseUrl = '';
+
+
+class KalikovaApi {
+  getData = (url, language = 'ru') => axios.get(`${baseUrl}/${url}`, {
+    headers: {
+      "Accept-Language": language,
+    }
+  });
+
+  postData = (url, data) => {
+    return axios.post(`${baseUrl}/${url}/`, data);
+  }
+
 }
+
+export default KalikovaApi;
