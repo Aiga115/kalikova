@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 100px;
+}
+
+.navbar-box-logo {
+    display: flex;
+    padding: 7px;
+}
+
+.navbar-box-links {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    padding: 23px 0;
+}
+.navbar-box-links__elem{
+    padding-bottom: 7px;
+    box-sizing: border-box;
+}
+.navbar-box-links__elem:hover {
+    border-bottom: 3px solid red;
+}
