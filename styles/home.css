@@ -1,0 +1,18 @@
+.home {
+    position: relative;
+
+}
+.home-background {
+    z-index: 0;
+}
+.home-title {
+    color: #ffffff;
+    position: absolute;
+    z-index: 1;
+    font-size: 88px;
+    left: 103px;
+    top: 118px;
+    font-family: "Book Antiqua";
+    font-weight: 700;
+    text-transform: uppercase;
+}

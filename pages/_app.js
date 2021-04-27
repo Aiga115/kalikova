@@ -6,6 +6,7 @@ import i18n from "i18next";
 import './../styles/navbar.css'
 import '../styles/globals.css'
 import './../styles/footer.css'
+import './../styles/home.css'
 
 function MyApp({ Component, pageProps }) {
   return (

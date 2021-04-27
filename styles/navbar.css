@@ -1,6 +1,7 @@
-*{
+* {
     box-sizing: border-box;
 }
+
 .navbar {
     display: flex;
     justify-content: center;
@@ -18,16 +19,22 @@
     padding: 7px;
 }
 
+.navbar-box-logo img {
+    cursor: pointer;
+}
+
 .navbar-box-links {
     display: flex;
     justify-content: space-between;
     width: 60%;
     padding: 23px 0;
 }
-.navbar-box-links__elem{
+
+.navbar-box-links__elem {
     padding-bottom: 7px;
     box-sizing: border-box;
 }
+
 .navbar-box-links__elem:hover {
     border-bottom: 3px solid red;
 }

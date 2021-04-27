@@ -12,9 +12,15 @@ function Footer() {
                     <a href="#">Правила пользования и соглашение</a>
                 </div>
                 <div className="footer-social-links">
-                    <img className="footer-social-links__img" src="/socials/twitter.svg" width="50" height="50" alt="twitter" />
-                    <img className="footer-social-links__img" src="/socials/linkedin.svg" width="50" height="50" alt="linkedin" />
-                    <img className="footer-social-links__img" src="/socials/facebook.svg" width="50" height="50" alt="facebook" />
+                    <a href="#">
+                        <img className="footer-social-links__img" src="/socials/twitter.svg" width="50" height="50" alt="twitter" />
+                    </a>
+                    <a href="#">
+                        <img className="footer-social-links__img" src="/socials/linkedin.svg" width="50" height="50" alt="linkedin" />
+                    </a>
+                    <a href="#">
+                        <img className="footer-social-links__img" src="/socials/facebook.svg" width="50" height="50" alt="facebook" />
+                    </a>
                 </div>
             </div>
             <div className="footer-copyright">
