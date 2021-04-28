@@ -1,5 +1,7 @@
+/*Title block*/
 .home-background {
     position: relative;
+    margin-bottom: 235px;
 }
 
 .home-background__img {
@@ -18,9 +20,24 @@
     font-weight: 700;
     text-transform: uppercase;
 }
+/*Slider block*/
+.home-slider{
 
+}
+.home-slider-elem{
+    display: flex !important;
+    justify-content: center !important;
+    background-image: url("/Background.png");
+    height: 548px;
+    width: 1075px !important;
+}
+.home-slider-elem__img{
+}
+.slick-arrow{
+    background-color: red;
+}
 
-
+/*Cards Block*/
 .home-cards {
     display: flex;
     flex-wrap: wrap;

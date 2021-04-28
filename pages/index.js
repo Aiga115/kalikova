@@ -1,5 +1,8 @@
 import styles from '../styles/Home.module.css'
 import Image from "next/image";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Home() {
 
@@ -17,6 +20,14 @@ export default function Home() {
         margin: "0px 165px 178px 80px",
     }
 
+    let settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    }
+
 
     return (
         <div className="home">
@@ -31,14 +42,26 @@ export default function Home() {
             </div>
 
 
+            <div className="home-slider">
+                <Slider {...settings}>
+                    <div className="home-slider-elem">
+                    </div>
+                    <div className="home-slider-elem">
+                    </div>
+                    <div className="home-slider-elem">
+                    </div>
+                </Slider>
+            </div>
+
+
             <div className="home-cards">
                 <div style={relative} className="home-relative">
                     <img src="/Rectangle23.png" alt="#" width="420" height="483"/>
                     <div className="home-cards-elem" style={{
                         position: "absolute",
                         top: "40px",
-                        right:"45px",
-                        margin:"0px"
+                        right: "45px",
+                        margin: "0px"
 
                     }}>
                         <p className="home-cards-elem__title">
@@ -71,7 +94,8 @@ export default function Home() {
                 <div style={relative} className="home-relative">
                     <img src="/Rectangle24.png" alt="#" width="420" height="483"/>
 
-                    <div className="home-cards-elem" style={{position: "absolute", top: "40px", right:"45px", margin:"0px"}}>
+                    <div className="home-cards-elem"
+                         style={{position: "absolute", top: "40px", right: "45px", margin: "0px"}}>
                         <p className="home-cards-elem__title">
                             новости
                         </p>
