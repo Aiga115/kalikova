@@ -20,12 +20,16 @@ export default function Home() {
         margin: "0px 165px 178px 80px",
     }
 
+
+
+
     let settings = {
-        dots: true,
+        dots: false,
         infinite: true,
-        speed: 500,
+        speed: 1000,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        autoPlay: true
     }
 
 
@@ -42,16 +46,24 @@ export default function Home() {
             </div>
 
 
-            <div className="home-slider">
                 <Slider {...settings}>
                     <div className="home-slider-elem">
+                        <div className="home-slider-elem-info">
+                            <p className="home-slider-elem-info__title">
+                                Каковы гарантии иностранных инвестиций в Кыргызской Республике?
+                            </p>
+                            <p className="home-slider-elem-info__subtitle">
+                                Times of Сentral Asia, 23 ноября 2011 г.
+                            </p>
+                        </div>
                     </div>
                     <div className="home-slider-elem">
+                        2
                     </div>
                     <div className="home-slider-elem">
+                        2
                     </div>
                 </Slider>
-            </div>
 
 
             <div className="home-cards">
