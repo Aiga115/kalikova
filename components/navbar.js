@@ -26,9 +26,9 @@ function Navbar() {
                     <Link href="/news">
                         <a className="navbar-box-links__elem">Новости</a>
                     </Link>
-                    <Link href="#">
-                        <a className="navbar-box-links__elem">Doing Business</a>
-                    </Link>
+                    {/*<Link href="#">*/}
+                    {/*    <a className="navbar-box-links__elem">Doing Business</a>*/}
+                    {/*</Link>*/}
                 </div>
             </div>
         </div>

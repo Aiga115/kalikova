@@ -10,8 +10,8 @@
 
 .navbar-box {
     display: flex;
-    justify-content: space-between;
-    padding: 26px 100px;
+    justify-content: flex-start;
+    padding: 26px 64px;
 }
 
 .navbar-box-logo {
@@ -26,15 +26,22 @@
 .navbar-box-links {
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    width: 30%;
     padding: 23px 0;
+    margin-left: 250px;
 }
 
 .navbar-box-links__elem {
-    padding-bottom: 7px;
+    /*padding: 2px 2px 7px 2px;*/
+    margin: 0;
     box-sizing: border-box;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 .navbar-box-links__elem:hover {
     border-bottom: 3px solid red;
+    font-weight: normal;
 }
