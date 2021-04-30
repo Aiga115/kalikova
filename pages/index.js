@@ -118,6 +118,10 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+
+            <div className="home-facts">
+                <img src="/Triger.svg" alt="#"/>
+            </div>
         </div>
     )
 }

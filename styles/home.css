@@ -136,3 +136,9 @@
 .home-relative {
     /*background-image: url("/Rectangle23.png");*/
 }
+
+
+.home-facts img{
+    width: 100%;
+    transform: translateY(82px);
+}

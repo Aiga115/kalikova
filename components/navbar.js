@@ -30,6 +30,17 @@ function Navbar() {
                     {/*    <a className="navbar-box-links__elem">Doing Business</a>*/}
                     {/*</Link>*/}
                 </div>
+                <div className="navbar-box-right">
+                    <div className="navbar-box-right-guide">
+                        <img src="/DoingBusiness.svg" alt="guide"/>
+                    </div>
+                    <div className="navbar-box-right-lang">
+                        <span>РУ</span>
+                        <span>EN</span>
+                        <span>КР</span>
+                        <span>中國人</span>
+                    </div>
+                </div>
             </div>
         </div>
     );

@@ -45,3 +45,21 @@
     border-bottom: 3px solid red;
     font-weight: normal;
 }
+
+.navbar-box-right{
+    display: flex;
+    margin-left: 30px;
+}
+.navbar-box-right-lang{
+    transform: translateY(-20px);
+    margin-left: 20px;
+
+}
+.navbar-box-right-lang span{
+    margin-right: 15px;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #626262;
+    cursor: pointer;
+}
