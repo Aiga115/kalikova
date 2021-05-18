@@ -72,72 +72,57 @@
 }
 
 .slick-prev {
-    left: 0 !important;
-    background-color: black !important;
+    left: 100px !important;
+    /*background-color: black !important;*/
 }
 
 .slick-next {
-    right: 0 !important;
-    background-color: black !important;
-    /*color: cadetblue !important;*/
+    right: 100px !important;
+    /*background-color: black !important;*/
 }
 
-/*.slick-prev::before{*/
-/*    background-color: black!important;*/
-/*    size: 30px !important;*/
-/*}*/
 
 
-/*Cards Block*/
-.home-cards {
+/*Guide Block*/
+.home-guide {
     display: flex;
-    flex-wrap: wrap;
     margin-top: 208px;
-    justify-content: center;
     position: relative;
+    background-color: #C4C4C4;
+    height: 282px;
 }
 
-.home-cards-elem {
-    width: 420px;
-    height: 483px;
-    padding: 20px;
-    background: #FDFDFD;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin: 0px 165px 178px 80px;
-    transition: all 0.3s;
-    cursor: pointer;
+.home-guide-elem{
+    position: absolute;
+    right: 102px;
+    top: -59px;
+    background-color: #971B2F;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.home-cards-elem:hover{
-    box-shadow: -5px 10px 20px 2px rgba(0,0,0,.15);
-    transform: translate(1px,-3px);
+.home-guide-elem svg path {
+    fill: #ffffff;
 }
 
-.home-cards-elem__title {
-    color: #971B2F;
-    font-style: normal;
-    font-size: 24px;
-    line-height: 28px;
-    margin-bottom: 212px;
-    padding-left: 25px;
+.home-guide-elem a {
+    color: #ffffff;
+    padding: 10px 25px;
+    border: 2px solid #ffffff;
     text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 0.19em;
-}
-
-.home-card-elem__text {
-    font-style: italic;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    width: 380px;
-}
-
-.home-relative {
-    /*background-image: url("/Rectangle23.png");*/
+    letter-spacing: 3px;
+    margin-top: 54px;
 }
 
 
+
+
+/*Facts block*/
 .home-facts img{
     width: 100%;
     transform: translateY(82px);

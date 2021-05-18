@@ -1,8 +1,8 @@
-import styles from '../styles/Home.module.css'
-import Image from "next/image";
+import Link from "next/link";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import SVGDoingBusiness from "../public/SVGDoingBusiness";
 
 export default function Home() {
 
@@ -23,13 +23,38 @@ export default function Home() {
 
 
 
+    function SampleNextArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+            <div
+                className={className}
+                // style={{ ...style, display: "block", background: "red"}}
+                onClick={onClick}>
+                <img src="/arrow.svg" style={{transform: "rotate(180deg)"}} alt="arrow"/>
+            </div>
+        );
+    }
+
+    function SamplePrevArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+            <div
+                className={className}
+                // style={{ ...style, display: "block", background: "green" }}
+                onClick={onClick}>
+                <img src="/arrow.svg" alt="arrow"/>
+            </div>
+    );
+    }
+
     let settings = {
         dots: false,
         infinite: true,
         speed: 1000,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoPlay: true
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />
     }
 
 
@@ -44,7 +69,6 @@ export default function Home() {
                     Law Firm
                 </div>
             </div>
-
 
                 <Slider {...settings}>
                     <div className="home-slider-elem">
@@ -66,56 +90,10 @@ export default function Home() {
                 </Slider>
 
 
-            <div className="home-cards">
-                <div style={relative} className="home-relative">
-                    <img src="/Rectangle23.png" alt="#" width="420" height="483"/>
-                    <div className="home-cards-elem" style={{
-                        position: "absolute",
-                        top: "40px",
-                        right: "45px",
-                        margin: "0px"
-
-                    }}>
-                        <p className="home-cards-elem__title">
-                            События
-                        </p>
-                        <p className="home-card-elem__text">
-                            В связи с распространением вируса Covid-19 в Кыргызской Республике и в мире,
-                            наши юристы подготовили подборку нормативных правовых ...
-                        </p>
-                    </div>
-                </div>
-
-                <div className="home-cards-elem" style={cardStyle1}>
-                    <p className="home-cards-elem__title">
-                        E-Knowledge
-                    </p>
-                    <p className="home-card-elem__text" style={{color: "white"}}>
-                        Практика K&A в сфере трудовых отношений
-                    </p>
-                </div>
-                <div className="home-cards-elem" style={cardStyle2}>
-                    <p className="home-cards-elem__title">
-                        Подкасты
-                    </p>
-                    <p className="home-card-elem__text" style={{color: "white"}}>
-                        Юристы Kalikova & Associates провели семинар для клиентов
-                    </p>
-                </div>
-
-                <div style={relative} className="home-relative">
-                    <img src="/Rectangle24.png" alt="#" width="420" height="483"/>
-
-                    <div className="home-cards-elem"
-                         style={{position: "absolute", top: "40px", right: "45px", margin: "0px"}}>
-                        <p className="home-cards-elem__title">
-                            новости
-                        </p>
-                        <p className="home-card-elem__text">
-                            Мы рады пригласить Вас принять участие в международном IBA Европа
-                            – Кавказ – Азия Форуме (IBA EKA Форум), который пройдет ...
-                        </p>
-                    </div>
+            <div className="home-guide">
+                <div className="home-guide-elem">
+                    <SVGDoingBusiness />
+                    <Link href="/" className="home-guide-elem__link">Подробнее</Link>
                 </div>
             </div>
 
@@ -125,3 +103,4 @@ export default function Home() {
         </div>
     )
 }
+
