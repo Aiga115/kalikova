@@ -31,9 +31,6 @@ function Navbar() {
                     {/*</Link>*/}
                 </div>
                 <div className="navbar-box-right">
-                    <div className="navbar-box-right-guide">
-                        <img src="/DoingBusiness.svg" alt="guide"/>
-                    </div>
                     <div className="navbar-box-right-lang">
                         <span>РУ</span>
                         <span>EN</span>

@@ -1,27 +1,11 @@
 import Link from "next/link";
 import Slider from "react-slick";
+import SVGDoingBusiness from "../components/SVG/SVGDoingBusiness";
+import NewsCard from "../components/newsCard";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import SVGDoingBusiness from "../public/SVGDoingBusiness";
 
 export default function Home() {
-
-    const cardStyle1 = {
-        backgroundColor: "#C68866"
-    }
-    const cardStyle2 = {
-        backgroundColor: "#A7BED3"
-    }
-
-    const relative = {
-        width: "420px",
-        height: "483px",
-        position: "relative",
-        margin: "0px 165px 178px 80px",
-    }
-
-
-
 
     function SampleNextArrow(props) {
         const { className, style, onClick } = props;
@@ -95,6 +79,16 @@ export default function Home() {
                     <SVGDoingBusiness />
                     <Link href="/" className="home-guide-elem__link">Подробнее</Link>
                 </div>
+            </div>
+
+            <div className="news">
+                <NewsCard />
+                <NewsCard />
+                <NewsCard />
+
+                <Link href="/">
+                    <span className="news-next">Посмотреть все</span>
+                </Link>
             </div>
 
             <div className="home-facts">

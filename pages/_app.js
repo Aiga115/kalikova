@@ -8,6 +8,7 @@ import '../styles/globals.css'
 import './../styles/footer.css'
 import './../styles/home.css'
 import './../styles/about.css'
+import './../styles/newsCard.css'
 
 function MyApp({ Component, pageProps }) {
   return (
