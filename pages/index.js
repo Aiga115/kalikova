@@ -32,11 +32,13 @@ export default function Home() {
     }
 
     let settings = {
-        dots: false,
+        dots: true,
         infinite: true,
-        speed: 1000,
+        speed: 800,
         slidesToShow: 1,
         slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />
     }
@@ -45,7 +47,7 @@ export default function Home() {
     return (
         <div className="home">
             <div className="home-background">
-                <img className="home-background__img" src="/Background.png" alt="background" width="100%"
+                <img className="home-background__img" src="/mainBackground.png" alt="background" width="100%"
                      height="600px"/>
                 <div className="home-background-title">
                     Kalikova & <br/>
@@ -75,6 +77,7 @@ export default function Home() {
 
 
             <div className="home-guide">
+                <img className="home-guide__img" src="/guideBackground.png" alt="guide"/>
                 <div className="home-guide-elem">
                     <SVGDoingBusiness />
                     <Link href="/" className="home-guide-elem__link">Подробнее</Link>
@@ -92,7 +95,7 @@ export default function Home() {
             </div>
 
             <div className="home-facts">
-                <img src="/Triger.svg" alt="#"/>
+                <img src="/Triger_____.svg" alt="#"/>
             </div>
         </div>
     )

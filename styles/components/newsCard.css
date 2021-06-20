@@ -1,5 +1,6 @@
 .card {
     display: flex;
+    flex-direction: row;
     padding: 30px;
     width: 1235px;
     background: #F9F9F9;
@@ -30,6 +31,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 22px;
 }
 
 .card-info-title__elem {
@@ -62,6 +64,7 @@
     display: flex;
     justify-content: flex-end;
     margin-right: 70px;
+    margin-top: 47px;
 }
 
 .card-info-next a {
@@ -73,6 +76,7 @@
     color: #971B2F;
     padding-bottom: 3px;
     transition: all 0.1s;
+    text-decoration: none;
 }
 
 .card-info-next a:hover {

@@ -5,7 +5,7 @@ function NewsCard(props) {
     return (
         <div className="card">
             <div className="card-img">
-                <img src="./cardPhoto.png" alt="photo"/>
+                <img src="./newsCardBackground.png" alt="photo"/>
             </div>
             <div className="card-info">
                 <div className="card-info-title">

@@ -3,12 +3,14 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import {I18nextProvider} from "react-i18next";
 import i18n from "i18next";
-import './../styles/navbar.css'
+import '../styles/components/navbar.css'
 import '../styles/globals.css'
-import './../styles/footer.css'
+import '../styles/components/footer.css'
 import './../styles/home.css'
 import './../styles/about.css'
-import './../styles/newsCard.css'
+import '../styles/components/newsCard.css'
+import '../styles/components/lawyerCard.css'
+import './../styles/team.css'
 
 function MyApp({ Component, pageProps }) {
   return (

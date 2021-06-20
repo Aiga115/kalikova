@@ -7,13 +7,16 @@ function Navbar() {
 
     return (
         <div className="navbar">
-            <div className="navbar-box container">
+            <div className="navbar-box">
                 <div className="navbar-box-logo">
                     <Link href="/">
-                        <img src="/logo.svg" alt="Logo" height="67" width="324"/>
+                        <img src="/logo.svg" alt="Logo" height="38" width="182"/>
                     </Link>
                 </div>
                 <div className="navbar-box-links">
+                    <Link href="/">
+                        <a className="navbar-box-links__elem">Главная</a>
+                    </Link>
                     <Link href="/about">
                         <a className="navbar-box-links__elem">О нас</a>
                     </Link>
@@ -26,9 +29,6 @@ function Navbar() {
                     <Link href="/news">
                         <a className="navbar-box-links__elem">Новости</a>
                     </Link>
-                    {/*<Link href="#">*/}
-                    {/*    <a className="navbar-box-links__elem">Doing Business</a>*/}
-                    {/*</Link>*/}
                 </div>
                 <div className="navbar-box-right">
                     <div className="navbar-box-right-lang">
