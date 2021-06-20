@@ -11,6 +11,7 @@ import './../styles/about.css'
 import '../styles/components/newsCard.css'
 import '../styles/components/lawyerCard.css'
 import './../styles/team.css'
+import './../styles/profile.css'
 
 function MyApp({ Component, pageProps }) {
   return (

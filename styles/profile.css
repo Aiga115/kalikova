@@ -1,0 +1,77 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-container {
+    width: 1025px;
+    margin-top: 56px;
+    margin-bottom: 56px;
+}
+
+.profile-container-info {
+    display: flex;
+    background-color: #F4F4F4;
+    padding: 81px 102px;
+}
+.profile-container-info-photo {
+    margin-right: 32px;
+}
+.profile-container-info-photo img {
+    height: 350px;
+    width: 300px;
+}
+
+.profile-container-info-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.profile-container-info-text__role {
+    font-size: 20px;
+    font-family: Roboto;
+    margin-bottom: 8px;
+}
+.profile-container-info-text__name {
+    color: #971B2F;
+    font-size: 48px;
+    font-family: Serif;
+}
+
+.profile-container-info-text__do {
+    font-size: 16px;
+    width: 486px;
+}
+
+
+
+
+
+.profile-skills {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 120px;
+}
+
+.profile-skills-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 820px;
+}
+.profile-skills-box__title {
+    font-size: 32px;
+    color: #971B2F;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Montserrat';
+}
+
+.profile-skills-box__subtitle {
+    font-size: 20px;
+    font-family: 'Montserrat';
+    line-height: 33px;
+}
