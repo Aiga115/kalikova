@@ -3,9 +3,10 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import {I18nextProvider} from "react-i18next";
 import i18n from "i18next";
+import '../styles/style.min.css'
 import '../styles/components/navbar.css'
 import '../styles/globals.css'
-import '../styles/components/footer.css'
+//import '../styles/components/footer.css'
 import './../styles/home.css'
 import './../styles/about.css'
 import '../styles/components/newsCard.css'
@@ -26,6 +27,15 @@ function MyApp({ Component, pageProps }) {
           <Footer />
       </>
   )
+}
+
+MyApp.getInitialProps = async(appContext)=>{
+  let pageProps = {};
+
+  if(appContext.Component.getInitialProps){
+    pageProps = await appContext.Component.getInitialProps(appContext.ctx)
+  }
+  return {...pageProps}
 }
 
 export default MyApp

@@ -7,8 +7,8 @@
 
 import axios from 'axios';
 
-export const url = ''
-const baseUrl = '';
+export const url = 'about-us/'
+const baseUrl = 'http://188.166.40.167';
 
 
 class KalikovaApi {

@@ -1,50 +1,257 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#page-wrap {
+  display: none;
 }
 
 .navbar-box {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 26px 90px;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 90px;
+}
+.navbar-box-logo{
+  padding-right:30px;
+}
+.menu-list{
+  display:none;
+}
+.navbar-box-links {
+  display: flex;
+  margin-right:20px;
+  margin-left:20px;
+}
+.navbar-box-links__elem {
+  margin-right: 30px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #292929 !important;
+  padding-bottom: 6px;
+  height: 30px;
+}
+.navbar-box-links__elem:hover {
+  border-bottom: 3px solid #971b2f;
 }
 
-.navbar-box-links{
-    display: flex;
+.navbar-box-right-lang {
+  display: flex;
 }
-.navbar-box-links__elem{
-    margin-right: 30px;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 22px;
-    color: #292929 !important;
-    padding-bottom: 6px;
-    height: 30px;
+.navbar-box-right-lang span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #959595;
+  margin-right: 10px;
 }
-.navbar-box-links__elem:hover{
-    border-bottom: 3px solid #971B2F;
+.navbar-box-right-lang span:hover {
+  color: #000000;
+  cursor: pointer;
 }
 
-.navbar-box-right-lang{
-    display: flex;
-}
-.navbar-box-right-lang span{
+@media screen and (max-width: 480px) {
+  #page-wrap {
+    display: inline-block;
+  }
+  .navbar-box-links {
+    display: none;
+    position: absolute;
+    max-width: 550px;
+    height: 400px;
+    z-index: 1;
+    background-color: white;
+  }
+  .navbar-box-links__elem {
+    display: block;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    text-transform: uppercase;
-    color: #959595;
-    margin-right: 10px;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #626262;
+  }
+  .menu-list:hover .navbar-box-links {
+    display: block;
+  }
+  .menu-list{
+    display:block;
+  }
+  .bm-item {
+    display: inline-block;
+  
+    /* Our sidebar item styling */
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: color 0.2s;
+  }
+  
+  /* Change color on hover */
+  .bm-item:hover {
+    color: grey;
+  }
+  
+  /* The rest copied directly from react-burger-menu docs */
+  
+  /* Position and sizing of burger button */
+  .bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    right: 36px;
+    top: 36px;
+  }
+  
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: #971B2F;
+  }
+  
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+  
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: red;
+  }
+  
+  /* General sidebar styles */
+  .bm-menu {
+    background: white;
+    padding: 2.5em 1.5em 0;
+
+  }
+  
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+  
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+  }
+  
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .navbar-box-right-lang {
+    display: none;
+  }
 }
-.navbar-box-right-lang span:hover{
-    color: #000000;
-    cursor:pointer;
+
+@media screen and (max-width: 750px) {
+  .navbar-box{
+    position:relative;
+  }
+  .menu-list{
+    display:block;
+  }
+  #page-wrap {
+    display: block;
+    position:absolute
+  }
+  .navbar-box-links {
+    display: none;
+    position: absolute;
+    max-width: 550px;
+    height: 400px;
+    z-index: 1;
+    background-color: white;
+  }
+  .navbar-box-links__elem {
+    display: block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #626262;
+  }
+  .menu-list:hover .navbar-box-links {
+    display: block;
+  }
+  .bm-item {
+    display: inline-block;
+  
+    /* Our sidebar item styling */
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: color 0.2s;
+  }
+  
+  /* Change color on hover */
+  .bm-item:hover {
+    color: grey;
+  }
+  
+  /* The rest copied directly from react-burger-menu docs */
+  
+  /* Position and sizing of burger button */
+  .bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    right: 36px;
+    
+    top: 36px;
+  }
+  
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+   background: #971B2F;
+
+  }
+  
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    top:10px;
+    height: 24px;
+    width: 24px;
+  }
+  
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: red;
+  }
+  
+  /* General sidebar styles */
+  .bm-menu {
+    background: white;
+    padding: 2.5em 1.5em 0;
+  }
+  
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+  
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+  }
+  
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .navbar-box-right-lang {
+    display: none;
+  }
+  
 }

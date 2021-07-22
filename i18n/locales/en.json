@@ -1,8 +1,53 @@
 {
   "navbar": {
+    "main":"Main",
     "about": "About us",
     "team": "Team",
     "services": "Services",
     "news": "News"
+  },
+  "footer":{
+    "contacts":"Contacts",
+    "office":"Our office",
+    "call-us":"Contact us",
+    "rights":"Terms of use and agreements"
+  },
+  "business-guide":{
+    "doing":"Doing Business Guide in Kyrgyzstan",
+    "more":"More Details"
+  },
+  "index-page-related":{
+    "next":"next",
+    "more":"See all"
+  },
+  "services-industries-related":{
+    "subtitle":"SERVICES AND INDUSTRIES",
+    "text1":"The lawyers of our firm honed their professional skills by providing legal assistance to the pioneers of the Kyrgyz market at the stage of their creation, formation and launch. The valuable experience we gained in the process of advising Kumtor Operating Company (Centerra Gold), Hyatt Regency Bishkek (Hyatt International Corporation), and Reemtsma Kyrgyzstan (Imperial Tobacco Group) on their corporate and investment activities, served as a start to the growth of our professionalism.",
+    "text2":"We provide legal services to clients working in various sectors of the economy, transnational corporations carrying out long-term and short-term commercial projects in Kyrgyzstan, government agencies, foreign diplomatic missions and international organizations.",
+    "subtitle-particle1":"Services",
+    "subtitle-particle2":"Industries"
+  },
+  "teams-related":{
+    "subtitle":"team",
+    "text1":"Our employees are the foundation of the firm's successful development. Our lawyers have extensive experience in legal practice in various branches of law, before joining K&A, many of them gained experience in government, international organizations, private commercial companies and non-profit organizations. Our team has extensive professional connections and contacts with representatives of the public and private sector.",
+    "text2":"Our lawyers were educated in leading educational institutions of Kyrgyzstan and foreign law schools, are members of the Kyrgyz Bar Association, the International Bar Association and the American Bar Association, arbitrators of the International Court of Arbitration at the Chamber of Commerce and Industry of the Kyrgyz Republic. Our team includes licensed lawyers and patent attorneys."
+  },
+  "news-related":{
+    "download":"download",
+    "version":"full version"
+  },
+  "footer-modal":{
+    "name":"Name",
+    "insert-name":"Enter your name",
+    "surname":"Last Name",
+    "insert-surname":"Enter your last name",
+    "insert-email":"Enter email",
+    "comment":"Question / Comment",
+    "insert-comment":"What do you want to ask?",
+    "reject":"Cancel",
+    "submit":"Submit",
+    "company":"Company",
+    "required":"Required field!"
+
   }
 }

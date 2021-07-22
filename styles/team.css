@@ -11,6 +11,7 @@
     font-size: 32px;
     font-weight: bolder;
     text-transform: uppercase;
+    margin-left:5rem;
     transform: translateX(-100px);
 }
 

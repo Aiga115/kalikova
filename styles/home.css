@@ -26,7 +26,7 @@
 .home-slider-elem {
     display: flex !important;
     justify-content: center !important;
-    background-image: url("/sliderBackground.jpeg");
+    /* background-image: url("/sliderBackground.jpeg"); */
     background-position: center;
     background-size: cover;
     height: 548px;
@@ -156,4 +156,21 @@
 .home-facts img{
     width: 100%;
     transform: translate(-1px, 4px);
+}
+
+@media screen and (max-width:750px){
+    .home-background__img img{
+        width:70%;
+    }
+    .home-background-title{
+        font-size:60px;
+    }
+}
+@media screen and (max-width:480px){
+    .home-background__img{
+        width:max-content;
+    }
+    .home-background-title{
+        font-size:44px;
+    }
 }
